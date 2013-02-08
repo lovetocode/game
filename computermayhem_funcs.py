@@ -33,7 +33,19 @@ def condo():
 	print('a) bathroom', end=" ")
 	print('k) kitchen', end=" ")
 	print('g) game room')
-	whichRoom = input('>')
-condo()
+	whichRoom = input('>').lower
+
+if whichRoom == 'b':
+	print('You storm off to your bedroom.')
+	print('You are at the door and to your right is your queen sized', end='')
+	print('bed with headboard.')
+	print('And directly in front of you is your dresser with mirror.')
+	print('Other than that your bedroom is empty.')
+	print('Your expensive laptop is in your hand'.)
+	print('Do you?')
+	print('t) Throw it at the bed or d) dress or m) mirror')
+	throw_at_object = input('>')
+	# added a comment
+	
 
 	
