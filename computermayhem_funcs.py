@@ -1,4 +1,4 @@
-import sys
+import sys, computerMayhemRooms
 
 def start():
 	print("ComputerMayhem Version 1.0")
@@ -25,27 +25,36 @@ def intro():
 
 def condo():
 	print('You race home in your sports car. To your')
-	print('fancy new condo to do some damage to your')
-	print('Electronics')
+	print('fancy new condo to do some damage to your Electronics')
 	print('Where do you want to go')
 	print('b) bedroom', end=" ")
 	print('L) livingroom', end=" ")
 	print('a) bathroom', end=" ")
 	print('k) kitchen', end=" ")
 	print('g) game room')
-	whichRoom = input('>').lower
+	selectARoom = input('>')
+	selectRoom(selectARoom)
+	
+	
 
-if whichRoom == 'b':
-	print('You storm off to your bedroom.')
-	print('You are at the door and to your right is your queen sized', end='')
-	print('bed with headboard.')
-	print('And directly in front of you is your dresser with mirror.')
-	print('Other than that your bedroom is empty.')
-	print('Your expensive laptop is in your hand'.)
-	print('Do you?')
-	print('t) Throw it at the bed or d) dress or m) mirror')
-	throw_at_object = input('>')
-	# added a comment
+def selectRoom(whichRoom):
+	if whichRoom == 'b':
+		print("bedroom")
+		computerMayhemRooms.bedRoom()
+	elif whichRoom == 'l':
+		living_room()
+	elif whichRoom == 'a':
+		bath_room
+	elif whichRoom == 'k':
+		kitchen()
+	elif whichRoom == 'g':
+		game_room
+	else:
+		print('you have reached the end')
+condo()
+
+		
+		
 	
 
 	
